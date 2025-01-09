@@ -8,12 +8,14 @@
 
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/style.css" />
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
     <a href="#main" class="hidden">본문 바로가기</a>
@@ -46,12 +48,14 @@
     <main id="main">
       <section class="video">
         <div class="video-title">
-          <h2>an interior design company</h2>
-          <p>
+          <h2 data-aos="fade-up" data-aos-delay="300">an interior design company</h2>
+
+          <p data-aos="fade-up" data-aos-delay="600">
             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
             velit mollit. Exercitation veniam consequat sunt nostrud amet.
           </p>
-          <a href="#" class="btn">request work</a>
+
+          <a data-aos="fade-up" data-aos-delay="900" href="#" class="btn">request work</a>
         </div>
 
         <div class="video-wrap">
@@ -69,9 +73,9 @@
       <!-- section.about>.inner>h3.sec-title+figure+p -->
       <section class="about">
         <div class="inner">
-          <h3 class="sec-title">about us</h3>
-          <figure><img src="./img/agency-pic.jpg" alt="#" /></figure>
-          <p>
+          <h3 class="sec-title" data-aos="fade-up">about us</h3>
+          <figure data-aos="fade-up" data-aos-delay="400"><img src="./img/agency-pic.jpg" alt="#" /></figure>
+          <p data-aos="fade-up">
             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
             velit mollit. Exercitation veniam consequat sunt nostrud amet.
           </p>
@@ -85,7 +89,7 @@
 
           <div class="swiper team-slider">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
+              <div class="swiper-slide" data-aos="flip-left">
                 <figure>
                   <img
                     src="https://cdn.i-scmp.com/sites/default/files/d8/images/methode/2020/06/08/4b0bdfc6-a639-11ea-8ea0-d7434be00753_image_hires_121748.jpg"
@@ -97,7 +101,7 @@
                   <dd>Founder & CEO</dd>
                 </dl>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide" data-aos="flip-left" data-aos-delay="300">
                 <figure>
                   <img
                     src="https://imageio.forbes.com/specials-images/imageserve/65a1340047720a197ed35dd8/Porsche-Sonderwunsch-Haus--The-Taycan-4S-Cross-Turismo-For-Jennie-Ruby-Jane---/0x0.jpg?format=jpg&crop=2312,1734,x0,y208,safe&width=960"
@@ -109,7 +113,7 @@
                   <dd>President of Sales</dd>
                 </dl>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide" data-aos="flip-left" data-aos-delay="500">
                 <figure>
                   <img
                     src="https://media.vanityfair.com/photos/5f8a0436fcee2a89680237c6/1:1/w_1000,h_1000,c_limit/Lisa-Blackpink-MAC-Lede.jpg"
@@ -121,7 +125,7 @@
                   <dd>Web Designer</dd>
                 </dl>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide" data-aos="flip-left" data-aos-delay="700">
                 <figure>
                   <img
                     src="https://dam.mediacorp.sg/image/upload/s--p704OKC2--/c_crop,h_1536,w_2048,x_0,y_0/c_fill,g_auto,h_622,w_830/f_auto,q_auto/v1/mediacorp/cna/image/2024/11/26/1732008240cropped3577x2682.jpg?itok=GlLVH628"
@@ -236,5 +240,9 @@
       </div>
     </footer>
     <!-- //e: footer -->
+
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
